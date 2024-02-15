@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      defaultTransition: Transition.native,
-      translations: MyTranslations(),
-      locale: const Locale('en', 'US'),
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
   }
